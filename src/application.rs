@@ -43,6 +43,8 @@ struct OpenWindowExample {
 impl WindowHandler for OpenWindowExample {
     fn on_frame(&mut self) {
 
+        self.context.make_current();
+
         let width = self.state.transform.get_width(self.state.root);
         let height = self.state.transform.get_height(self.state.root);
 
@@ -68,7 +70,7 @@ impl WindowHandler for OpenWindowExample {
             
         //}
 
-        self.context.make_current();
+        
 
         // unsafe {
         //     gl::ClearColor(1.0, 0.0, 1.0, 1.0);
