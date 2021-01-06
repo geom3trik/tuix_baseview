@@ -47,7 +47,7 @@ impl WindowHandler for OpenWindowExample {
         let height = self.state.transform.get_height(self.state.root);
 
         self.canvas.set_size(width as u32, height as u32, 1.0);
-        self.canvas.clear_rect(0, 0, width as u32, height as u32, Color::rgbf(0.8, 0.8, 0.8));
+        self.canvas.clear_rect(0, 0, width as u32, height as u32, Color::rgb(80, 80, 80));
 
         let hierarchy = self.state.hierarchy.clone();
 
