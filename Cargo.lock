@@ -1534,7 +1534,7 @@ checksum = "62ddb402ac6c2af6f7a2844243887631c4e94b51585b229fcfddb43958cd55ca"
 [[package]]
 name = "tuix"
 version = "0.1.0"
-source = "git+https://github.com/geom3trik/tuix?branch=main#2541c7ed78d315dc1e1bed4526878f390be60638"
+source = "git+https://github.com/geom3trik/tuix?branch=main#2dd703beb3e558d5903a34a6b391ead7240e024b"
 dependencies = [
  "bimap",
  "cssparser",

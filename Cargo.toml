@@ -1,17 +1,21 @@
 [package]
 name = "tuix_baseview"
 version = "0.1.0"
-authors = ["George Atkinson <geomyles@yahoo.co.uk>"]
+authors = ["George Atkinson <geomyles@yahoo.co.uk>", "Billy Messenger <BillyDM@protonmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = ["opengl"]
+opengl = ["raw-gl-context", "gl"]
+
 [dependencies]
-raw-gl-context = { version = "0.1" }
+raw-gl-context = { version = "0.1", optional = true }
+gl = { version = "0.14", optional = true }
 baseview = { git = "https://github.com/RustAudio/baseview.git", branch = "master" }
 tuix = { git = "https://github.com/geom3trik/tuix", branch = "main" }
 #tuix = { path = "../tuix"}
 keyboard-types = { version = "0.5", default-features = false }
 raw-window-handle = "0.3"
-femtovg = {git = "https://github.com/femtovg/femtovg", branch = "master"}
-gl = "0.14.0"
+femtovg = { git = "https://github.com/femtovg/femtovg", branch = "master" }
