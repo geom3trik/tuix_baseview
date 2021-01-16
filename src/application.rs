@@ -5,9 +5,9 @@
 
 #![allow(deprecated)]
 
-use raw_window_handle::{HasRawWindowHandle, RawWindowHandle};
+use raw_window_handle::{HasRawWindowHandle};
 
-use tuix::window::{KeyboardInput, Window, WindowDescription, WindowEvent, WindowWidget};
+use tuix::window::{WindowDescription, WindowEvent, WindowWidget};
 
 use tuix::{Entity, State};
 use tuix::{Length, Visibility};
@@ -15,8 +15,6 @@ use tuix::{Length, Visibility};
 use tuix::state::mouse::{MouseButton, MouseButtonState};
 
 use tuix::events::{Event, Propagation};
-
-use tuix::state::hierarchy::IntoHierarchyIterator;
 
 use tuix::state::Fonts;
 
@@ -29,7 +27,6 @@ use femtovg::{
 };
 
 use baseview::{WindowHandler, WindowScalePolicy};
-use keyboard_types::{KeyboardEvent, KeyState};
 
 use raw_gl_context::GlContext;
 
